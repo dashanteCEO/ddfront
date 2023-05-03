@@ -1,0 +1,66 @@
+.vehicles {
+  display: flex;
+  flex-direction: column;
+}
+.vehicles .head {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+.vehicles .head h2 {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.vehicles .head a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 6px;
+  background: #00c3ff;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+.vehicles .head a:hover {
+  background: #00aeff;
+}
+.vehicles .cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 2rem;
+}
+.vehicles .cards .card {
+  width: 100%;
+  height: 20rem;
+  border-radius: 5px;
+  background: #fff;
+  padding: 5px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.vehicles .cards .card img {
+  width: 100%;
+  border-radius: 5px;
+  height: 60%;
+}
+.vehicles .cards .card h3 {
+  color: #000;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.vehicles .cards .card .model {
+  margin-left: 0.2rem;
+}
+.vehicles .cards .card flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}/*# sourceMappingURL=vehicles.css.map */

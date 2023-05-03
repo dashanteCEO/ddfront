@@ -1,0 +1,58 @@
+.footer {
+  width: 100%;
+  background: #00c3ff;
+  height: 15rem;
+  border-radius: 8px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-radius: 5px;
+  align-items: center;
+  height: 60%;
+  margin: auto 0;
+}
+.footer .social h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+}
+.footer .social a {
+  text-decoration: none;
+}
+.footer .social a img {
+  margin: 1rem;
+  width: 40px;
+}
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-radius: 5px;
+  align-items: center;
+}
+.footer .contact h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+}
+.footer .contact h3 {
+  font-weight: 500;
+  color: #fff;
+}
+.footer .contact a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+.footer .contact a:hover {
+  background: #00ccff;
+}/*# sourceMappingURL=footer.css.map */

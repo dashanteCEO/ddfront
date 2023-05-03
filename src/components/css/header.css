@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header a {
+  color: #000;
+  text-decoration: none;
+}
+.header a img {
+  height: 60px;
+  width: 120%;
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+}
+.header ul a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 500;
+}
+.header ul a:hover {
+  background: #e9e8e8;
+}
+.header .queryHolder {
+  width: 60%;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  padding: 15px 10px;
+  top: 0;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header .queryHolder ul {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+.header .queryHolder ul li {
+  width: 100%;
+  justify-content: space-between;
+  text-decoration: none;
+  flex-direction: row;
+  display: flex;
+  text-transform: capitalize;
+  padding: 2px 0;
+}/*# sourceMappingURL=header.css.map */
