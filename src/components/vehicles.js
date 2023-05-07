@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Vehicles(){
 
   const [vehicles, setVehicles] = useState([])
-  const [length, setLength] = useState(null)
+  // const [length, setLength] = useState(null)
   useEffect(() => {
     const fetchVehicles = async () => {
         try {
@@ -13,7 +13,7 @@ export default function Vehicles(){
             const data = await response.json();
             if (response.ok) {
               setVehicles(data.urls);
-              setLength(vehicles.length);
+              // setLength(vehicles.length);
             } else {
               console.error("Error fetching files:", data);
             }
@@ -22,7 +22,7 @@ export default function Vehicles(){
           }
     };
     fetchVehicles();
-  }, [])
+  })
 
   return(
     <div className='vehicles'>

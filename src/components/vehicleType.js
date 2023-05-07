@@ -23,9 +23,9 @@ export default function VehicleType(){
           } catch (error) {
             console.error(error);
           }
-    };
+    }
     fetchVehicles();
-  }, [])
+  })
 
   return(
     <div className='vehicles'>

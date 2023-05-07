@@ -24,8 +24,8 @@ export default function Header(){
 }, [query]);
 
 
-const burger = document.querySelector('.burger');
-const draw = document.querySelector('.draw');
+// const burger = document.querySelector('.burger');
+// const draw = document.querySelector('.draw');
 
 // burger.addEventListener('click', () => {
 //   draw.style.display = 'flex';

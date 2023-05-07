@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route
 import Home from './components/home';
 import Vehicles from './components/vehicles';
 import Login from './components/auth/login';
-import Protected from "./components/Protected";
+// import Protected from "./components/Protected";
 import Post from './components/post';
 import VehicleView from './components/vehicleView';
 import VehicleType from './components/vehicleType';

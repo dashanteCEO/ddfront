@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import "./dashboard.css";
 
 function Dashboard() {
   const [vehicles, setVehicles] = useState([])
-  const [lenght, setLenght] = useState(null)
   
   const [selectedGroup, setSelectedGroup] = useState(null);
 
@@ -30,7 +28,6 @@ function Dashboard() {
             const data = await response.json();
             if (response.ok) {
               setVehicles(data.urls);
-              setLenght(vehicles.length);
             } else {
               console.error("Error fetching files:", data);
             }

@@ -31,6 +31,7 @@ function Login() {
           }
         }, 500);
       })
+      console.log(res)
     } catch (error) {
       console.log(error.response);
       if (
