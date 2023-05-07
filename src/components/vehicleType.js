@@ -30,6 +30,7 @@ export default function VehicleType(){
   return(
     <div className='vehicles'>
       <div className='head'>
+        <a href='/'>home</a>
         <h2>{length} Vehicles</h2>
       </div>
       <div>
