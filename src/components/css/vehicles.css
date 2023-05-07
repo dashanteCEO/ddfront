@@ -35,7 +35,7 @@
 }
 .vehicles .cards .card {
   width: 100%;
-  height: 20rem;
+  height: 22rem;
   border-radius: 5px;
   background: #fff;
   padding: 5px;
@@ -44,6 +44,9 @@
   font-weight: 500;
   text-decoration: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 .vehicles .cards .card img {
   width: 100%;
@@ -63,4 +66,88 @@
   align-items: center;
   width: 100%;
   flex-direction: row;
+}
+.vehicles .cards .card flex t {
+  padding: 2px;
+  background: #000;
+  border-radius: 100px;
+  margin: 0 10px;
+}
+.vehicles .cards .card a {
+  color: #fff;
+  background: #00c3ff;
+  text-decoration: none;
+  padding: 8px 15px;
+  width: 100%;
+  border-radius: 60rem;
+  margin: auto;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+.vehicles .cards .card a:hover {
+  background: #00aeff;
+}
+
+@media only screen and (max-width: 768px) {
+  .vehicles .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 2rem 0;
+    margin-top: 1rem;
+  }
+  .vehicles .cards .card {
+    width: 100%;
+    height: 25rem;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .vehicles .cards .card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 60%;
+  }
+  .vehicles .cards .card h3 {
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .vehicles .cards .card .model {
+    margin-left: 0.2rem;
+  }
+  .vehicles .cards .card flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+  }
+  .vehicles .cards .card flex t {
+    padding: 2px;
+    background: #000;
+    border-radius: 100px;
+    margin: 0 10px;
+  }
+  .vehicles .cards .card a {
+    color: #fff;
+    background: #00c3ff;
+    text-decoration: none;
+    padding: 8px 15px;
+    width: 100%;
+    border-radius: 60rem;
+    margin: auto;
+    transition: all 0.4s ease;
+    text-align: center;
+  }
+  .vehicles .cards .card a:hover {
+    background: #00aeff;
+  }
 }/*# sourceMappingURL=vehicles.css.map */

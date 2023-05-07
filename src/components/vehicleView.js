@@ -37,20 +37,21 @@ export default function VehicleView(){
             if (response.ok) {
               setPreviewImages(data.urls);
               const fixed = data.urls
-              setBrand(fixed.brand)
-              setYear(fixed.year)
-              setModel(fixed.model)
-              setBodyType(fixed.bodyType)
-              setSpecs(fixed.specs)
-              setColor(fixed.color)
-              setPrice(fixed.price)
-              setSteering(fixed.steering)
-              setSeats(fixed.seats)
-              setFeul(fixed.feul)
-              setTransmission(fixed.transmission)
-              setTrim(fixed.trim)
-              setMileage(fixed.trim)
-              console.log(fixed)
+              setBrand(fixed[1].brand);
+              setYear(fixed[1].year);
+              setModel(fixed[1].model);
+              setBodyType(fixed[1].bodyType);
+              setSpecs(fixed[1].specs);
+              setColor(fixed[1].color);
+              setPrice(fixed[1].price);
+              setSteering(fixed[1].steering);
+              setSeats(fixed[1].seats);
+              setFeul(fixed[1].feul);
+              setTransmission(fixed[1].transmission);
+              setTrim(fixed[1].trim);
+              setMileage(fixed[1].mileage);
+
+              // console.log(fixed)
             } else {
               console.error("Error fetching files:", data);
             }
@@ -60,43 +61,82 @@ export default function VehicleView(){
     };
     fetchImages();
   }, [])
-
-  
+ 
     return(
 <div>
     <div className='flex'>
-    <div className='flex'>
             <div className="image-slider-container">
               <div className="image-slider">
-                <img src={previewImages[currentIndex]?.url} alt="Preview" className="image-preview" />
+          <img
+            src={previewImages[currentIndex]?.url}
+            alt="Preview"
+            className="image-preview"
+            />
                 <button onClick={handlePrev} className="slider-arrow slider-arrow-left">&larr;</button>
                 <button onClick={handleNext} className="slider-arrow slider-arrow-right">&rarr;</button>
               </div>
             </div>
-            </div>
-            <div className='docs'>
+            <div className='docs2'>
               <h2>Vehicle Information</h2>
               <form>
                 <view>
               <flex>
                  <info>
-                  <h3>brand</h3>
+                  <h3>Make: </h3>
                   <h3>{brand}</h3>
                  </info>
-                <input placeholder='Model'value={model} onChange={(event) => setModel(event.target.value)} />
-                <input placeholder='Year' type={'number'} value={year} onChange={(event) => setYear(event.target.value)} />
-                <input placeholder='Body Type' value={bodyType} onChange={(event) => setBodyType(event.target.value)} />
-                <input placeholder='Color' value={color} onChange={(event) => setColor(event.target.value)} />
+                 <info>
+                  <h3>trim: </h3>
+                  <h3>{trim}</h3>
+                 </info>
+                 <info>
+                  <h3>year: </h3>
+                  <h3>{year}</h3>
+                 </info>
+                 <info>
+                  <h3>mileage: </h3>
+                  <h3>{mileage}</h3>
+                 </info>
+                 <info>
+                  <h3>body: </h3>
+                  <h3>{bodyType}</h3>
+                 </info>            
+                  <info>
+                  <h3>color: </h3>
+                  <h3>{color}</h3>
+                 </info>
               </flex>
               <flex>
-                <input placeholder='Mileage' value={mileage} onChange={(event) => setMileage(event.target.value)} />
-                <input placeholder='Steering'value={steering} onChange={(event) => setSteering(event.target.value)} />
-                <input placeholder='Feul' value={feul} onChange={(event) => setFeul(event.target.value)} />
-                <input placeholder='Transmission' value={transmission} onChange={(event) => setTransmission(event.target.value)} />
-                <input placeholder='Seats' value={seats} type='number' onChange={(event) => setSeats(event.target.value)} />
+              <info>
+                  <h3>model: </h3>
+                  <h3>{model}</h3>
+                 </info>
+                 <info>
+                  <h3>steering: </h3>
+                  <h3>{steering}</h3>
+                 </info>
+                 <info>
+                  <h3>fuel: </h3>
+                  <h3>{feul}</h3>
+                 </info>
+                 <info>
+                  <h3>transmission: </h3>
+                  <h3>{transmission}</h3>
+                 </info>
+                 <info>
+                  <h3>seats: </h3>
+                  <h3>{seats}</h3>
+                 </info>
+                 <info>
+                  <h3>price: </h3>
+                  <h3> {price}</h3>
+                 </info>
               </flex>
               </view>
-              <textarea placeholder='Specifications' value={specs} onChange={(event) => setSpecs(event.target.value)} />
+              <drill>
+                  <h3>Specifications</h3>
+                  <h3>{specs}</h3>
+                 </drill>
               </form>
             </div>
             </div>

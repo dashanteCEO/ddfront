@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react';
 import './css/home.css'
+import { Link } from 'react-router-dom';
 
 export default function Home(){
    const [vehicles, setVehicles] = useState([])
@@ -19,7 +20,7 @@ export default function Home(){
     };
     fetchVehicles();
   }, [])
-
+  
 return(
     <div className='home'>
        <div className='hero'>
@@ -34,9 +35,9 @@ return(
         <a href='/vehiclestype/suv'>suvs</a>
         <a href='/vehiclestype/van'>vans</a>
         <a href='/vehiclestype/truck'>trucks</a>
-        <a href='/vehiclestype/mini-van'>mini-vans</a>
+        <a href='/vehiclestype/mini-van'>mini-vans</a> 
         </div>
-        <h2>
+        <h2 className='h2'>
            new stock 
            <br/>
            every week!
@@ -65,7 +66,7 @@ return(
             <t/>
             <p className='model'>{featured.bodyType}</p>
             </flex>
-                        <a href='/'>view</a>
+            <Link to={`/vehicle/${featured.groupId}`}>view</Link>
                      </div>
                   )
                })

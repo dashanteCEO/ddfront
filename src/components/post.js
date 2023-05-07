@@ -56,6 +56,7 @@ export default function Upload() {
         }
       );
       alert("Vehicle uploaded successfully");
+      // window.location.reload()
   };
 
   const handleNext = () => {

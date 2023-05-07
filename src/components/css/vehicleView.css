@@ -4,13 +4,13 @@
   width: 100%;
   justify-content: space-between;
   margin: auto;
-  margin-bottom: 2rem;
 }
 
 .image-slider-container {
   position: relative;
   width: 100%;
   height: 462px;
+  margin-bottom: 1rem;
 }
 
 .image-slider {
@@ -26,6 +26,12 @@
   height: 100%;
   margin: 0;
   border-radius: 8px;
+  background: #f6f6f6;
+}
+.image-slider .loader {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: auto;
 }
 
 .image-preview {
@@ -108,6 +114,10 @@ input[type=file]::-webkit-file-upload-button:hover {
   padding: 10px;
   margin: auto 3rem auto auto;
 }
+.docs input, .docs textarea {
+  width: 100%;
+  margin-bottom: 5px;
+}
 .docs h2 {
   font-size: 20px;
   font-weight: 500;
@@ -130,22 +140,68 @@ input[type=file]::-webkit-file-upload-button:hover {
   justify-content: space-between;
   flex-direction: row;
 }
-.docs form input {
-  background: #f6f6f6;
+.docs form info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.docs form info h3 {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.docs form drill {
+  margin-top: 10px;
+}
+.docs form drill h3 {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.docs2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px;
+  margin: auto 3rem auto auto;
+}
+.docs2 h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.docs2 form {
+  margin: auto;
+  flex-direction: column;
+  display: flex;
   width: 100%;
-  margin-bottom: 10px;
-  text-transform: capitalize;
+  justify-content: space-between;
 }
-.docs form input ::-moz-placeholder {
-  text-transform: capitalize;
+.docs2 form flex {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
 }
-.docs form input ::placeholder {
-  text-transform: capitalize;
+.docs2 form view {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.docs form textarea {
-  resize: vertical;
-  background: #f6f6f6;
+.docs2 form info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
-  margin-bottom: 10px;
+}
+.docs2 form info h3 {
   text-transform: capitalize;
+  font-weight: 500;
+}
+.docs2 form drill {
+  margin-top: 10px;
+}
+.docs2 form drill h3 {
+  text-transform: capitalize;
+  font-weight: 500;
 }/*# sourceMappingURL=vehicleView.css.map */
