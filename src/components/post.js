@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './css/upload.css';
+import { useNavigate } from "react-router-dom";
+
 
 export default function Upload() {
   const [images, setImages] = useState([]);
@@ -19,6 +21,7 @@ export default function Upload() {
   const [steering, setSteering] = useState('');
   const [transmission, setTransmission] = useState('');
   const [currentImage, setCurrentImage] = useState(0);
+  const navigate = useNavigate();
 
   const handleImageChange = (event) => {
     const files = event.target.files;
@@ -56,6 +59,7 @@ export default function Upload() {
         }
       );
       alert("Vehicle uploaded successfully");
+      navigate("/admin/dashboard");
       // window.location.reload()
   };
 

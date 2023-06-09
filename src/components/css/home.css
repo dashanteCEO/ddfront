@@ -24,6 +24,9 @@
   display: flex;
   text-transform: capitalize;
 }
+.hero .h2 {
+  background: linear-gradient(to bottom left, #bf1cb6, #00ffeb);
+}
 .hero .icons {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +63,16 @@
   text-transform: capitalize;
   text-align: center;
   font-weight: 600;
+}
+.featured .a {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #000;
+  text-decoration: none;
 }
 .featured .featuredVehicles {
   display: grid;

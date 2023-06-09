@@ -47,7 +47,7 @@ const handleSearch = (event) => {
             {/* <h2>D&D Auto Sales</h2> */}
             <img src='https://cdn2.jacars.net/media/cache/2a/c4/2ac4835452665b29787730c7d44d3ff0.jpg' alt="logo" />
           </a>
-          <input placeholder='Search for a vehicle' onChange={handleSearch} />
+          <input placeholder='Search for a vehicle by brand' onChange={handleSearch} />
           <ul>
             <a href="/vehicles">vehicles</a>
             <a href="/">location</a>

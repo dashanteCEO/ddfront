@@ -21,15 +21,15 @@ function Login() {
     try {
       const url = "https://ddauto.up.railway.app/api/user/login";
       const res = await axios.post(url, data).then((res) => {
-          localStorage.setItem("username", res.data.username);
-          localStorage.setItem("token", res.data.token);
+          sessionStorage.setItem("username", res.data.username);
+          sessionStorage.setItem("token", res.data.token);
           console.log(res)
           setTimeout(() => {
-            if (localStorage.getItem("token")) {
+            if (sessionStorage.getItem("token")) {
               navigate("/admin/dashboard");
               window.location.reload();
           }
-        }, 500);
+        }, 1000);
       })
       console.log(res)
     } catch (error) {

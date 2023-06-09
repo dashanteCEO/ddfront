@@ -197,6 +197,7 @@ input[type=file]::-webkit-file-upload-button:hover {
 .docs2 form info h3 {
   text-transform: capitalize;
   font-weight: 500;
+  margin-right: 10px;
 }
 .docs2 form drill {
   margin-top: 10px;

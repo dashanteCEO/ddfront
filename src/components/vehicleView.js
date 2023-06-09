@@ -83,59 +83,59 @@ export default function VehicleView(){
               <flex>
                  <info>
                   <h3>Make: </h3>
-                  <h3>{brand}</h3>
+                  <h3 className='value'>{brand}</h3>
                  </info>
                  <info>
                   <h3>trim: </h3>
-                  <h3>{trim}</h3>
+                  <h3 className='value'>{trim}</h3>
                  </info>
                  <info>
                   <h3>year: </h3>
-                  <h3>{year}</h3>
+                  <h3 className='value'>{year}</h3>
                  </info>
                  <info>
                   <h3>mileage: </h3>
-                  <h3>{mileage}</h3>
+                  <h3 className='value'>{mileage}</h3>
                  </info>
                  <info>
                   <h3>body: </h3>
-                  <h3>{bodyType}</h3>
+                  <h3 className='value'>{bodyType}</h3>
                  </info>            
                   <info>
                   <h3>color: </h3>
-                  <h3>{color}</h3>
+                  <h3 className='value'>{color}</h3>
                  </info>
               </flex>
               <flex>
               <info>
                   <h3>model: </h3>
-                  <h3>{model}</h3>
+                  <h3 className='value'>{model}</h3>
                  </info>
                  <info>
                   <h3>steering: </h3>
-                  <h3>{steering}</h3>
+                  <h3 className='value'>{steering}</h3>
                  </info>
                  <info>
                   <h3>fuel: </h3>
-                  <h3>{feul}</h3>
+                  <h3 className='value'>{feul}</h3>
                  </info>
                  <info>
                   <h3>transmission: </h3>
-                  <h3>{transmission}</h3>
+                  <h3 className='value'>{transmission}</h3>
                  </info>
                  <info>
                   <h3>seats: </h3>
-                  <h3>{seats}</h3>
+                  <h3 className='value'>{seats}</h3>
                  </info>
                  <info>
                   <h3>price: </h3>
-                  <h3> {price}</h3>
+                  <h3 className='value'>{price}</h3>
                  </info>
               </flex>
               </view>
               <drill>
-                  <h3>Specifications</h3>
-                  <h3>{specs}</h3>
+                  <h3>Specifications:</h3>
+                  <h3 className='value'>{specs}</h3>
                  </drill>
               </form>
             </div>
