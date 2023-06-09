@@ -25,13 +25,13 @@ export default function Footer(){
             <h2>
               contact
             </h2>
-              <a href="#">
+              <a href="/">
                 <h3>(876)827-1913</h3>
               </a>
-              <a href="#">
+              <a href="/">
                 <h3>(876)442-4836</h3>
               </a>
-              <a href="#">
+              <a href="/">
                 <h3>ddautoja@gmail.com</h3>  
               </a>
           </div>
