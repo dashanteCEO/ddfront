@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './css/header.css'
+import { Link } from 'react-router-dom'
 
 export default function Header(){
   const token = localStorage.getItem("token");
@@ -43,9 +44,9 @@ const handleSearch = (event) => {
   if (!token || token) {
     return(
         <div className='header'>
-          <a href='/'>
-            {/* <h2>D&D Auto Sales</h2> */}
+          <a href='/' className='logo'> 
             <img src='https://cdn2.jacars.net/media/cache/2a/c4/2ac4835452665b29787730c7d44d3ff0.jpg' alt="logo" />
+            <h2>D&D Auto Sales</h2>
           </a>
           <input placeholder='Search for a vehicle by brand' onChange={handleSearch} />
           <ul>
@@ -60,23 +61,27 @@ const handleSearch = (event) => {
           </div>
 
           <div className='queryHolder' style={{
-              width: '39.5%',
+              width: '39.8%',
               borderRadius: '5px',
               background: '#fff',
               position: 'absolute',
               padding: '15px',
               top: 0,
-              marginTop: '5rem',
-              marginLeft: '25%',
-              boxShadow: 'rgba(99, 99, 99, .5) 0px 2px 8px 0px',
+              marginTop: '4.5rem',
+              marginLeft: '29.7%',
+              boxShadow: 'rgba(99, 99, 99, .3) 0px 2px 8px 0px',
               display: query === '' ? 'none' : 'flex',
-              zIndex:2
+              zIndex:2,
+              alignItems:'left',
+              justifyContent:'start'
           }}>
           {loading && <p></p>}
       {results.length > 0 ? (
         <ul>
           {results.map(result => (
-            <li key={result.id}>{result.brand} {result.model}</li>
+            <a href={`/search/${result.brand}`} key={result.id}>
+             <li>{result.brand}</li>
+            </a>
           ))}
         </ul>
       ) : (

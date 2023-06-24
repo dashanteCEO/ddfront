@@ -3,13 +3,45 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    // padding: 5px 0;
     a{
       color: #000;
       text-decoration: none;
+      align-items: center;
+      display: flex;
       img{
-        height: 60px;
-        width: 120%;
+        height: 70px;
+        width: 28%;
+      }
+    }
+    input{
+      margin-right: auto;
+      padding: 8px;
+      width: 40%;
+      border-radius: 5px;
+      background: #f6f6f6;
+      border: none;
+      border: 2px solid #f6f6f6;
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+      &::placeholder{
+          color: #000;
+          font-weight: 500;
+          text-transform: none;
+      }
+      &:focus{
+          outline: none;
+          background: #fff;
+      }
+    }
+    .logo{
+      flex-direction: row;
+      display: flex;
+      width: 30%;
+      align-items: center;
+      h2{
+        margin-top: -10px;
+        margin-left: -20px;
+        font-weight: 500;
       }
     }
     .draw{
@@ -46,36 +78,32 @@
       }
     }
    
-    .queryHolder{
-      width: 60%;
-      border-radius: 10px;
-      background: #fff;
-      position: absolute;
-      padding: 15px 10px;
-      top: 0;
-      margin-top: 5rem;
-      margin-left: 3rem;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-     ul{ 
+.queryHolder{
+    ul{ 
       flex-direction: column;
       display: flex;
       width: 100%;
-      li{
+     a, li {
         width: 100%;
         justify-content: space-between;
-      text-decoration: none;
-      flex-direction: row;
-      display: flex;
-      text-transform: capitalize;
-      padding: 2px 0;
+        text-decoration: none;
+        flex-direction: row;
+        display: flex;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-weight: 500;
+        &:hover{
+        color: #636262;
+        transition: all .2s ease;
+        }
      }
     }
-    }
+  }
 }
 
 
 @media only screen and (max-width: 768px) {
-  .header{
+.header{
 .burger{
   display: flex;
 }

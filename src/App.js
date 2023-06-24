@@ -11,6 +11,8 @@ import VehicleView from './components/vehicleView';
 import VehicleType from './components/vehicleType';
 import Dashboard from './components/auth/dashboard';
 import Footer from './components/footer'
+import SearchBrand from './components/searchBrand';
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App() {
         <Route path='/vehiclestype/:bodyType' element={<VehicleType/>} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/vehicle/:groupId' element={<VehicleView/>}/>
+        <Route path='/search/:brand' element={<SearchBrand/>}/>
         <Route element={<Protected/>}>
         <Route path='/admin/dashboard' element={<Dashboard/>}/>
         <Route path='/post' element={<Post/>}/>
