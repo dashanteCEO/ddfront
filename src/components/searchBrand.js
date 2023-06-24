@@ -20,6 +20,7 @@ export default function SearchBrand(){
               setVehicles(data);
               setLength(data.length);
             }
+            console.log(data)
           } catch (error) {
             console.error(error);
           }

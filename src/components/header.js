@@ -23,22 +23,23 @@ export default function Header(){
 }, [query]);
 
 
-// const burger = document.querySelector('.burger');
-// const draw = document.querySelector('.draw');
+const burger = document.querySelector('.burger');
+const draw = document.querySelector('.draw');
 
-// burger.addEventListener('click', () => {
-//   draw.style.display = 'flex';
-// });
+burger.addEventListener('click', () => {
+  draw.style.display = 'flex';
+});
 
 
-// draw.addEventListener('click', () => {
-//   draw.style.display = 'none';
-// });
+draw.addEventListener('click', () => {
+  draw.style.display = 'none';
+});
 
 
 const handleSearch = (event) => {
   setQuery(event.target.value);
 };
+
   if (window.location.pathname === "/login") return null;
   if (!token || token) {
     return(
