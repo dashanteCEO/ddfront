@@ -75,5 +75,4 @@ return(
        <a href='/vehicles' className='a'>View More</a>
        </div>
     </div>
-)
-}
+)}

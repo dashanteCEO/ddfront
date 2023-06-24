@@ -3,7 +3,6 @@ import axios from 'axios';
 import './css/upload.css';
 import { useNavigate } from "react-router-dom";
 
-
 export default function Upload() {
   const [images, setImages] = useState([]);
   const [previewImages, setPreviewImages] = useState([]);

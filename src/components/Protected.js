@@ -7,4 +7,4 @@ const ProtectRoutes = () => {
   return token ? <Outlet /> : <Navigate to="/login" />;
 };
 
-export default ProtectRoutes;
+export default ProtectRoutes; 

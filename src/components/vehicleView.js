@@ -13,7 +13,7 @@ export default function VehicleView(){
   const handleNext = () => {
     setCurrentIndex(currentIndex === previewImages.length - 1 ? 0 : currentIndex + 1);
   };
-
+ 
   let { groupId } = useParams();
   const [brand, setBrand] = useState(null)
   const [year, setYear] = useState(null)

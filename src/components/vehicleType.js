@@ -3,7 +3,6 @@ import './css/vehicles.css'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'; 
 
-
 export default function VehicleType(){
 
   const [vehicles, setVehicles] = useState([])
