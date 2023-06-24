@@ -20,7 +20,6 @@ function Dashboard() {
     }
   }, [selectedGroup]);
 
-
   useEffect(() => {
     const fetchVehicles = async () => {
         try {
