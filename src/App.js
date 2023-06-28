@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route
 import Home from './components/home';
 import Vehicles from './components/vehicles';
 import Login from './components/auth/login';
-import Protected from "./components/Protected";
+import Protected from "./Protected";
 import Post from './components/post';
 import VehicleView from './components/vehicleView';
 import VehicleType from './components/vehicleType';
@@ -24,8 +24,8 @@ function App() {
         <Route path='/vehiclestype/:bodyType' element={<VehicleType/>} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/vehicle/:groupId' element={<VehicleView/>}/>
-        <Route path='/search/:brand' element={<SearchBrand/>}/>
         <Route element={<Protected/>}>
+        <Route path='/search/:brand' element={<SearchBrand/>}/>
         <Route path='/admin/dashboard' element={<Dashboard/>}/>
         <Route path='/post' element={<Post/>}/>
         </Route>

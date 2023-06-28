@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import './css/vehicles.css'
-import { Link } from 'react-router-dom'
+import { Link, UNSAFE_DataRouterStateContext } from 'react-router-dom'
 import { useParams } from 'react-router-dom'; 
 
 
@@ -17,7 +17,7 @@ export default function SearchBrand(){
             const response = await fetch(`https://ddauto.up.railway.app/api/post/searchretbrand/${brand}`)
             const data = await response.json();
             if (response.ok) {
-              setVehicles(data);
+              setVehicles(data.urls);
               setLength(data.length);
             }
             console.log(data)
@@ -26,7 +26,7 @@ export default function SearchBrand(){
           }
     }
     fetchVehicles();
-  })
+  },[])
 
   return(
     <div className='vehicles'>
@@ -39,12 +39,12 @@ export default function SearchBrand(){
       {
         vehicles.map(item=>{
           return(
-            <Link to={`/vehicle/${item.groupId}`} key={item.groupId} className='card'>
+            <Link to={`/vehicle/${item.groupId}`} key={item.url} className='card'>
             <img src={item.url} alt={item.url} />
-            <flex> 
+            <div className='flex'> 
             <h3>{item.brand}</h3>
             <h3 className='model'>{item.model}</h3>
-            </flex>
+            </div>
             <p>${item.price}</p>
             <p>{item.transmission}</p>
             <p>{item.bodyType}</p>
