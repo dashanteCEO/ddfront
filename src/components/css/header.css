@@ -135,6 +135,7 @@
     width: 100%;
     display: none;
     flex-direction: column;
+    z-index: 1;
   }
   .draw .flex {
     display: flex;
