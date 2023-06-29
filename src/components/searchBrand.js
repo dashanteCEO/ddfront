@@ -9,16 +9,21 @@ export default function SearchBrand(){
   const [vehicles, setVehicles] = useState([])
   const [length, setLength] = useState(null)
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);  
+  
   let { brand } = useParams();
 
   useEffect(() => {
     const fetchVehicles = async () => {
         try {
-            const response = await fetch(`https://ddauto.up.railway.app/api/post/searchretbrand/${brand}`)
+            const response = await fetch(`https://ddauto.up.railway.app/api/post/searchretbrand/${brand}?page=${currentPage}`)
             const data = await response.json();
             if (response.ok) {
               setVehicles(data.urls);
               setLength(data.length);
+              setTotalPages(data.totalPages);
+
             }
             console.log(data)
           } catch (error) {
@@ -26,7 +31,11 @@ export default function SearchBrand(){
           }
     }
     fetchVehicles();
-  },[brand]) 
+  },[brand,currentPage])
+ 
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
  
   return(
     <div className='vehicles'>
@@ -54,5 +63,18 @@ export default function SearchBrand(){
       }
       </div>
 </div>
+<div className="pages">
+        {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+          (page) => (
+            <button
+              key={page}
+              onClick={() => handlePageChange(page)}
+              disabled={page === currentPage}
+            >
+              {page}
+            </button>
+          )
+        )}
+      </div>
 </div>
 )}
