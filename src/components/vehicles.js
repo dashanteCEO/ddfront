@@ -22,7 +22,7 @@ export default function Vehicles() {
         console.error("Error fetching files:", error);
       }
     };
-    fetchVehicles();
+    fetchVehicles();  
   }, []);
 
   return (

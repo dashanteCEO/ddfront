@@ -61,7 +61,7 @@ export default function VehicleView(){
     };
     fetchImages();
   },[])
- 
+  
     return(
 <div>
     <div className='flex'>

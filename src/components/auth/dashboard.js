@@ -36,7 +36,6 @@ function Dashboard() {
         };
         fetchVehicles();
       }, [])
-      
 
       const handleDelete = (groupId) => {
         setSelectedGroup(groupId);

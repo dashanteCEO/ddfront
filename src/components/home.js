@@ -21,6 +21,7 @@ export default function Home(){
     fetchVehicles();
   }, [])
   
+  
 return(
     <div className='home'>
        <div className='hero'>

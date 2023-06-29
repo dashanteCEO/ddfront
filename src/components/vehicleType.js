@@ -25,7 +25,7 @@ export default function VehicleType(){
     }
     fetchVehicles();
   },[])
-
+ 
   return(
     <div className='vehicles'>
       <div className='head'>

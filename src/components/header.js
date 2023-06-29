@@ -38,6 +38,7 @@ export default function Header() {
   const handleSearch = (event) => {
     setQuery(event.target.value);
   };
+  
 
   if (window.location.pathname === "/login") return null;
   if (!token || token) {
