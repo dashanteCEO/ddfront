@@ -79,84 +79,23 @@
   margin: 0.5rem auto;
 }
 
+.err {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
-  .login {
+  .alpha {
     display: flex;
-    width: 100%;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
-  .login .home {
-    padding: 10px 15px;
-    border-radius: 3rem;
-    color: #fff;
-    text-decoration: none;
-    background: #0668e9;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 20%;
+  .err {
+    display: flex;
+    margin: auto;
     text-align: center;
-    position: absolute;
+    margin-top: 50%;
   }
-  .login form {
-    display: flex;
-    width: 100%;
-    position: relative;
-    min-height: 80vh;
-    margin: auto;
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-  }
-  .login form login {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 70%;
-    margin: auto;
-    padding: 15px;
-    border-radius: 10px;
-    background: #f6f6f6;
-  }
-  .login form login h2 {
-    text-transform: capitalize;
-    margin: 0 auto;
-    background: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  .login form login inputHolder {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 16rem;
-    margin-top: 1rem;
-  }
-  .login form login inputHolder input {
-    background: #fff;
-    width: 100%;
-    text-transform: lowercase;
-  }
-  .login form login button {
-    width: 40%;
-    background: #1877f2;
-    border: none;
-    transition: all 0.3s ease;
-    color: #fff;
-    margin: 1rem auto 0.5rem;
-    border-radius: 10rem;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  .login form login button:hover {
-    background: #0668e9;
-  }
-  .login form a {
-    background: none;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #1877f2;
-    margin: 0.5rem auto;
+  .login {
+    display: none;
   }
 }/*# sourceMappingURL=login.css.map */

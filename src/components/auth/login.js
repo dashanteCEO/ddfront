@@ -47,6 +47,7 @@ function Login() {
     }
   };
   return (
+    <div className="alpha">
     <div className="login">
       <a href="/" className="home">Home</a>
       <form onSubmit={handleSubmit}>
@@ -75,6 +76,8 @@ function Login() {
           <a href="/">Forgot Password?</a>
         </login>
       </form>
+    </div>
+      <h2 className="err">Login is not avalible on mobile</h2>
     </div>
   );
 }
