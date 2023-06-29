@@ -60,7 +60,7 @@ export default function VehicleView(){
           }
     };
     fetchImages();
-  },[])
+  },[groupId])
   
     return(
 <div>

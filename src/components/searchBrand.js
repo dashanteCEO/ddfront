@@ -26,7 +26,7 @@ export default function SearchBrand(){
           }
     }
     fetchVehicles();
-  },[]) 
+  },[brand]) 
  
   return(
     <div className='vehicles'>
