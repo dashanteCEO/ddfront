@@ -37,7 +37,7 @@ export default function VehicleType(){
       {
         vehicles.map(item=>{
           return(
-            <Link to={`/vehicle/${item.groupId}`} key={item.groupId} className='card'>
+            <div className='card'>
             <img src={item.url} alt={item.url} />
             <flex> 
             <h3>{item.brand}</h3>
@@ -46,7 +46,9 @@ export default function VehicleType(){
             <p>${item.price}</p>
             <p>{item.transmission}</p>
             <p>{item.bodyType}</p>
-          </Link>
+            <Link to={`/vehicle/${item.groupId}`}>view</Link>
+          </div>
+
           )
         })
       }

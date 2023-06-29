@@ -195,7 +195,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 408px) {
+@media only screen and (max-width: 428px) {
   .header .burger {
     display: flex;
   }
