@@ -203,3 +203,27 @@ drill{
 }
 }
 }
+
+@media only screen and (max-width: 768px) {
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .image-slider-container {
+    position: relative;
+    width: 95%;
+    height: 462px;
+    margin: auto;
+  }
+  .image-slider{
+    width: 100%;
+    // margin-right: auto;
+    padding: 0;
+    // margin-left:-2rem ;
+  }
+  .docs2{
+    width: 100%;
+    margin: auto;
+
+  }
+}
