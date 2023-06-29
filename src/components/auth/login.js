@@ -77,7 +77,7 @@ function Login() {
         </login>
       </form>
     </div>
-      <h2 className="err">Login is not avalible on mobile</h2>
+      <h2 className="err">Login is only avalible on Desktop/Laptop</h2>
     </div>
   );
 }

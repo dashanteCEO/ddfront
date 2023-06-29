@@ -33,7 +33,7 @@
       margin-bottom: 2rem; 
       .card{
         width: 100%;
-        height: 22rem;
+        height: 24rem;
         border-radius: 5px;
         background: #fff;
         padding: 5px;
@@ -50,6 +50,7 @@
           width: 100%;
           border-radius: 5px;
           height: 60%;
+          background: #f6f6f6;
         }
         h3{
           color: #000;
@@ -86,6 +87,26 @@
             }
         }
       } }
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+ 
+  .pages button {
+    padding: 10px;
+    background: #fff;
+    border: none;
+    font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.pages button.active {
+  background: #00c3ff;
 }
 
 

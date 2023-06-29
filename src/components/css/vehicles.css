@@ -35,7 +35,7 @@
 }
 .vehicles .cards .card {
   width: 100%;
-  height: 22rem;
+  height: 24rem;
   border-radius: 5px;
   background: #fff;
   padding: 5px;
@@ -52,6 +52,7 @@
   width: 100%;
   border-radius: 5px;
   height: 60%;
+  background: #f6f6f6;
 }
 .vehicles .cards .card h3 {
   color: #000;
@@ -86,6 +87,26 @@
 }
 .vehicles .cards .card a:hover {
   background: #00aeff;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.pages button {
+  padding: 10px;
+  background: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.pages button.active {
+  background: #00c3ff;
 }
 
 @media only screen and (max-width: 768px) {

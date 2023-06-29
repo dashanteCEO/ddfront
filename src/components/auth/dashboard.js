@@ -13,6 +13,7 @@ function Dashboard() {
         .delete(`https://ddauto.up.railway.app/api/post/delete/${selectedGroup}`)
         .then((res) => {
           console.log(res.data);
+          alert('Vehicle deleted!')
         })
         .catch((error) => {
           console.error(error);
@@ -46,9 +47,25 @@ function Dashboard() {
   if (token) {
     return (
     <div className="dashboard">
-    <div className="header">
+    <div className="header" >
       <h2>Dashboard</h2>
-      {/* <h3>{lenght} Vehicles</h3> */}
+      <a
+  href="/post"
+  style={{
+    textDecoration: 'none',
+    textTransform: 'capitalize',
+    padding: '6px',
+    background: '#00c3ff',
+    color: '#fff',
+    fontWeight: '600',
+    borderRadius: '4px',
+    transition: 'all .4s ease',
+    textAlign: 'center'
+  }}
+>
+  Post
+</a>
+
     </div>
     <div className='cardss'>
       {
