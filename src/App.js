@@ -24,8 +24,8 @@ function App() {
         <Route path='/vehiclestype/:bodyType' element={<VehicleType/>} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/vehicle/:groupId' element={<VehicleView/>}/>
-        <Route element={<Protected/>}>
         <Route path='/search/:brand' element={<SearchBrand/>}/>
+        <Route element={<Protected/>}>
         <Route path='/admin/dashboard' element={<Dashboard/>}/>
         <Route path='/post' element={<Post/>}/>
         </Route>
