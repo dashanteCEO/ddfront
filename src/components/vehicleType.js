@@ -9,19 +9,21 @@ export default function VehicleType(){
   const [length, setLength] = useState(null)
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);  
-  
+  const [isLoading, setIsLoading] = useState(false)
+
   let { bodyType } = useParams();
 
   useEffect(() => {
     const fetchVehicles = async () => {
-        try {
-            const response = await fetch(`https://ddauto.up.railway.app/api/post/vehicles/${bodyType}?page=${currentPage}`)
+      try {         setIsLoading(true)
+        const response = await fetch(`https://ddauto.up.railway.app/api/post/vehicles/${bodyType}?page=${currentPage}`)
             const data = await response.json();
             if (response.ok) {
               setVehicles(data);
               setLength(data.length);
               setTotalPages(data.totalPages);
-            }
+            }            setIsLoading(false)
+
           } catch (error) {
             console.error(error);
           }
@@ -37,9 +39,16 @@ export default function VehicleType(){
     <div className='vehicles'>
       <div className='head'>
         <a href='/'>home</a>
-        <h2>{length} Vehicles</h2>
       </div>
-      <div>
+         <h1 style={{
+            borderRadius: '10px',
+            background: '#fff',
+            margin: 'auto',
+            marginTop:95,
+            display: isLoading ? 'flex' : 'none',
+            textAlign:'center'
+          }}>Loading...</h1>
+            <div>
         <div className='cards'>
       {
         vehicles.map(item=>{

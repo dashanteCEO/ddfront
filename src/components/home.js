@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom';
 
 export default function Home(){
    const [vehicles, setVehicles] = useState([])
+   const [isLoading, setIsLoading] = useState(false)
+
   useEffect(() => {
     const fetchVehicles = async () => {
         try {
+         setIsLoading(true)
             const response = await fetch(`https://ddauto.up.railway.app/api/post/featured`);
             const data = await response.json();
             if (response.ok) {
@@ -14,6 +17,7 @@ export default function Home(){
             } else {
               console.error("Error fetching files:", data);
             }
+            setIsLoading(false)
           } catch (error) {
             console.error("Error fetching files:", error);
           }
@@ -46,6 +50,17 @@ return(
        </div>
        <div className='featured'>
          <h2>featured items</h2>
+         <h1 style={{
+            // width: '100%',
+            borderRadius: '10px',
+            background: '#fff',
+            margin: 'auto',
+            marginTop:95,
+            // position: 'absolute',
+            // padding: '15px',
+            // top: 0,
+            display: isLoading ? 'flex' : 'none',
+          }}>Loading...</h1>
          <div className='featuredVehicles'>
             {
                vehicles.map(featured=>{

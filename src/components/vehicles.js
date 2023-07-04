@@ -6,10 +6,12 @@ export default function Vehicles() {
   const [vehicles, setVehicles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);  
-  
+  const [isLoading, setIsLoading] = useState(false)
+
   useEffect(() => {
     const fetchVehicles = async () => {
-      try {
+      try {         setIsLoading(true)
+
         const response = await fetch(
           `https://ddauto.up.railway.app/api/post/test?page=${currentPage}`
         );
@@ -19,7 +21,8 @@ export default function Vehicles() {
           setTotalPages(data.totalPages);
         } else {
           console.error("Error fetching files:", data);
-        }
+        }            setIsLoading(false)
+
       } catch (error) {
         console.error("Error fetching files:", error);
       }
@@ -37,6 +40,17 @@ export default function Vehicles() {
       <div className="head">
         <a href="/">home</a>
       </div>
+      <h1 style={{
+            // width: '100%',
+            borderRadius: '10px',
+            background: '#fff',
+            margin: 'auto',
+            marginTop:95,
+            // position: 'absolute',
+            // padding: '15px',
+            // top: 0,
+            display: isLoading ? 'flex' : 'none',
+          }}>Loading...</h1>
       <div>
         <div className="cards">
           {vehicles.map((item, index) => {
