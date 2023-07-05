@@ -30,7 +30,7 @@ function Login() {
               navigate("/admin/dashboard");
               window.location.reload();
           }
-        }, 1000);
+        }, 3000);
       })
       console.log(res)
     } catch (error) {
