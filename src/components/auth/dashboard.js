@@ -42,7 +42,7 @@ function Dashboard() {
         setSelectedGroup(groupId);
       };
     
-      const token = localStorage.getItem('token')
+      const token = sessionStorage.getItem('token')
       if (!token) return null;
   if (token) {
     return (
