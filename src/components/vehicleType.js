@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 export default function VehicleType(){
 
   const [vehicles, setVehicles] = useState([])
-  const [length, setLength] = useState(null)
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);  
   const [isLoading, setIsLoading] = useState(false)
@@ -20,7 +19,6 @@ export default function VehicleType(){
             const data = await response.json();
             if (response.ok) {
               setVehicles(data);
-              setLength(data.length);
               setTotalPages(data.totalPages);
             }            setIsLoading(false)
 
