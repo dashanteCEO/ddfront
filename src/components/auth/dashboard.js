@@ -44,6 +44,7 @@ function Dashboard() {
     
       const token = sessionStorage.getItem('token')
       if (!token) return null;
+
   if (token) {
     return (
     <div className="dashboard">
@@ -77,6 +78,7 @@ function Dashboard() {
             <img src={item.url} alt={item.url} />
             <p>{item.brand}</p>
             <p className='model'>{item.model}</p>
+            <p>{item.trim}</p>
             <p>{item.bodyType}</p>
             <p>{item.transmission}</p>
             <p>${item.price}</p>
