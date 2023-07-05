@@ -22,7 +22,7 @@ function Dashboard() {
           }
         };
         fetchVehicles();
-      }, [vehicles])
+      }, [])
 
   useEffect(() => {
     if (selectedGroup) {
