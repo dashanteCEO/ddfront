@@ -32,7 +32,7 @@ export default function VehicleView(){
   useEffect(() => {
     const fetchImages = async () => {
         try {
-            const response = await fetch(`https://ddauto.up.railway.app/api/post/all/${groupId}`);
+            const response = await fetch(`https://ddbackend-hctu.onrender.com/api/post/all/${groupId}`);
             const data = await response.json();
             if (response.ok) {
               setPreviewImages(data.urls);

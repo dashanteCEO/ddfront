@@ -10,7 +10,7 @@ export default function Home(){
     const fetchVehicles = async () => {
         try {
          setIsLoading(true)
-            const response = await fetch(`https://ddauto.up.railway.app/api/post/featured`);
+            const response = await fetch(`https://ddbackend-hctu.onrender.com/api/post/featured`);
             const data = await response.json();
             if (response.ok) {
               setVehicles(data.urls);

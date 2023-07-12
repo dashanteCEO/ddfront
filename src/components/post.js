@@ -49,7 +49,7 @@ export default function Upload() {
     formData.append("trim", trim);
     }
        await axios.post(
-        "https://ddauto.up.railway.app/api/post/upload",
+        "https://ddbackend-hctu.onrender.com/api/post/upload",
         formData,
         {
           headers: {
@@ -58,7 +58,7 @@ export default function Upload() {
         }
       );
       alert("Vehicle uploaded successfully");
-      navigate("/admin/dashboard");
+      // navigate("/admin/dashboard");
       // window.location.reload()
   };
 
@@ -92,19 +92,19 @@ export default function Upload() {
                 <view>
                 <flex>
                   <input placeholder='Make' name="brand" value={brand} onChange={(e) => setBrand(e.target.value)}required />
-                  <input placeholder='Model' name='model' value={model} onChange={(e) => setModel(e.target.value)}/>
-             <input placeholder='Year' name='year' type={'number'} value={year} onChange={(e) => setYear(e.target.value)}/>
-                <input placeholder='Body Type' name='bodyType' value={bodyType} onChange={(e) => setBodyType(e.target.value)}/>
-                <input placeholder='Color' name='color' value={color} onChange={(e) => setColor(e.target.value)}/>
-                <input placeholder='Trim' name='trim' value={trim} onChange={(e) => setTrim(e.target.value)}/>
+                  <input placeholder='Model' name='model' value={model} onChange={(e) => setModel(e.target.value)} required/>
+             <input placeholder='Year' name='year' type={'number'} value={year} onChange={(e) => setYear(e.target.value)} required/>
+                <input placeholder='Body Type' name='bodyType' value={bodyType} onChange={(e) => setBodyType(e.target.value)} required/>
+                <input placeholder='Color' name='color' value={color} onChange={(e) => setColor(e.target.value)} required/>
+                <input placeholder='Trim' name='trim' value={trim} onChange={(e) => setTrim(e.target.value)} required/>
               </flex>
               <flex>
-                <input placeholder='Mileage' name='mileage' type='number' value={mileage} onChange={(e) => setMileage(e.target.value)}/>
-                <input placeholder='Steering' name='steering' value={steering} onChange={(e) => setSteering(e.target.value)}/>
-                <input placeholder='Fuel' name='feul' value={feul} onChange={(e) => setFeul(e.target.value)}/>
-                <input placeholder='Transmission' name='transmission' value={transmission} onChange={(e) => setTransmission(e.target.value)}/>
-                <input placeholder='Seats' name='seats' value={seats} type='number' onChange={(e) => setSeats(e.target.value)}/>
-              <input placeholder='Price' name='price' value={price} onChange={(e) => setPrice(e.target.value)}/>
+                <input placeholder='Mileage' name='mileage' type='number' value={mileage} onChange={(e) => setMileage(e.target.value)} required/>
+                <input placeholder='Steering' name='steering' value={steering} onChange={(e) => setSteering(e.target.value)} required/>
+                <input placeholder='Fuel' name='feul' value={feul} onChange={(e) => setFeul(e.target.value)} required/>
+                <input placeholder='Transmission' name='transmission' value={transmission} onChange={(e) => setTransmission(e.target.value)} required/>
+                <input placeholder='Seats' name='seats' value={seats} type='number' onChange={(e) => setSeats(e.target.value)} required/>
+              <input placeholder='Price' name='price' value={price} onChange={(e) => setPrice(e.target.value)} required/>
               </flex>
               </view>
               <textarea placeholder='Specifications' name='specs' value={specs} onChange={(e) => setSpecs(e.target.value)} className='spc'/>

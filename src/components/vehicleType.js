@@ -15,7 +15,7 @@ export default function VehicleType(){
   useEffect(() => {
     const fetchVehicles = async () => {
       try {         setIsLoading(true)
-        const response = await fetch(`https://ddauto.up.railway.app/api/post/vehicles/${bodyType}?page=${currentPage}`)
+        const response = await fetch(`https://ddbackend-hctu.onrender.com/api/post/vehicles/${bodyType}?page=${currentPage}`)
             const data = await response.json();
             if (response.ok) {
               setVehicles(data);

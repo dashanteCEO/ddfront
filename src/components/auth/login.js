@@ -20,7 +20,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "https://ddauto.up.railway.app/api/user/login";
+      const url = "https://ddbackend-hctu.onrender.com/api/user/login";
       const res = await axios.post(url, data).then((res) => {
           sessionStorage.setItem("username", res.data.username);
           sessionStorage.setItem("token", res.data.token);

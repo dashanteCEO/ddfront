@@ -13,7 +13,7 @@ export default function Vehicles() {
       try {         setIsLoading(true)
 
         const response = await fetch(
-          `https://ddauto.up.railway.app/api/post/test?page=${currentPage}`
+          `https://ddbackend-hctu.onrender.com/api/post/test?page=${currentPage}`
         );
         const data = await response.json();
         if (response.ok) {
@@ -46,9 +46,6 @@ export default function Vehicles() {
             background: '#fff',
             margin: 'auto',
             marginTop:95,
-            // position: 'absolute',
-            // padding: '15px',
-            // top: 0,
             display: isLoading ? 'flex' : 'none',
           }}>Loading...</h1>
       <div>

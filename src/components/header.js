@@ -13,7 +13,7 @@ export default function Header() {
       if (!query.trim()) return;
       try {
         const response = await fetch(
-          `https://ddauto.up.railway.app/api/post/search/${query}`
+          `https://ddbackend-hctu.onrender.com/api/post/search/${query}`
         );
         const json = await response.json();
         setResults(json.urls);

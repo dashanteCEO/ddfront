@@ -10,7 +10,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchVehicles = async () => {
         try {
-            const response = await fetch(`https://ddauto.up.railway.app/api/post/test`);
+            const response = await fetch(`https://ddbackend-hctu.onrender.com/api/post/test`);
             const data = await response.json();
             if (response.ok) {
               setVehicles(data.urls);
@@ -27,7 +27,7 @@ function Dashboard() {
   useEffect(() => {
     if (selectedGroup) {
       axios
-        .delete(`https://ddauto.up.railway.app/api/post/delete/${selectedGroup}`)
+        .delete(`https://ddbackend-hctu.onrender.com/api/post/delete/${selectedGroup}`)
         .then((res) => {
           console.log(res.data);
           alert('Vehicle deleted!')

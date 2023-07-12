@@ -69,6 +69,8 @@ input[type=file] {
   border: none;
   color: #fff;
   font-size: 16px;
+  margin-left: 45%;
+  margin-top: 15%;
 }
 input[type=file]::-webkit-file-upload-button {
   background-color: #00e1ff;

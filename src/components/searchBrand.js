@@ -17,7 +17,7 @@ export default function SearchBrand(){
   useEffect(() => {
     const fetchVehicles = async () => {
         try {
-            const response = await fetch(`https://ddauto.up.railway.app/api/post/searchretbrand/${brand}?page=${currentPage}`)
+            const response = await fetch(`https://ddbackend-hctu.onrender.com/api/post/searchretbrand/${brand}?page=${currentPage}`)
             const data = await response.json();
             if (response.ok) {
               setVehicles(data.urls);
@@ -46,18 +46,27 @@ export default function SearchBrand(){
       <div>
         <div className='cards'>
       {
-        vehicles.map(item=>{
+        vehicles.map((item, index)=>{
           return(
-            <Link to={`/vehicle/${item.groupId}`} key={item.url} className='card'>
+            <div className="card" key={index}>
             <img src={item.url} alt={item.url} />
-            <div className='flex'> 
-            <h3>{item.brand}</h3>
-            <h3 className='model'>{item.model}</h3>
+              <flex>
+                <h3>{item.brand}</h3>
+                <h3 className="model">{item.model}</h3>
+              </flex>
+              <p>{item.trim}</p>
+              <flex>
+                <p>${item.price}</p>
+                <t />
+                <p>{item.year}</p>
+              </flex>
+              <flex>
+                <p>{item.transmission}</p>
+                <t />
+                <p className="model">{item.bodyType}</p>
+              </flex>
+              <Link to={`/vehicle/${item.groupId}`}>view</Link>
             </div>
-            <p>${item.price}</p>
-            <p>{item.transmission}</p>
-            <p>{item.bodyType}</p>
-          </Link>
           )
         })
       }
