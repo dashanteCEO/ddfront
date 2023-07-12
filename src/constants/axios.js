@@ -7,7 +7,7 @@ const axiosInstance = axios.create(
   baseURL:
     NODE_ENV === "development"
       ? "http://localhost:6969"
-      : "https://ddautoja-backend-production.up.railway.app",
+      : "https://ddbackend-hctu.onrender.com",
   withCredentials: true,
 });
 
