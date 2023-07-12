@@ -31,7 +31,7 @@ export default function SearchBrand(){
           }
     }
     fetchVehicles();
-  },[currentPage,brand])
+  },[brand, currentPage])
  
   const handlePageChange = (page) => {
     setCurrentPage(page);
