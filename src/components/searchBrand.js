@@ -23,7 +23,7 @@ export default function SearchBrand(){
               setVehicles(data.urls);
               setLength(data.length);
               setTotalPages(data.totalPages);
-
+              console.log(data.urls)
             }
             console.log(data)
           } catch (error) {
@@ -31,7 +31,7 @@ export default function SearchBrand(){
           }
     }
     fetchVehicles();
-  },[brand,currentPage])
+  },[currentPage])
  
   const handlePageChange = (page) => {
     setCurrentPage(page);
