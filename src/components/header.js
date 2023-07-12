@@ -106,34 +106,6 @@ export default function Header() {
               <a href="/">location</a>
               <a href="/">sale options</a>
           </ul>
-          {/* <div
-          className="queryHolder2"
-          style={{
-            width: '60%',
-            borderRadius: '10px',
-            background: '#fff',
-            position: 'absolute',
-            padding: '15px',
-            top: 0,
-            marginTop: '5rem',
-            marginLeft: '3rem',
-            boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
-            display: query === '' ? 'none' : 'flex',
-          }}
-        >
-          {loading && <p>Loading results...</p>}
-          {results.length > 0 ? (
-            <ul>
-              {results.map((result) => (
-                <li key={result.id}>
-                  {result.brand} {result.model}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>No results found.</p>
-          )}
-        </div> */}
         </div>
       </div>
     );
