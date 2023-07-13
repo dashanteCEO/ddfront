@@ -51,7 +51,7 @@ export default function VehicleView(){
               setTrim(fixed[1].trim);
               setMileage(fixed[1].mileage);
 
-              // console.log(fixed)
+              console.log(fixed[1].trim)
             } else {
               console.error("Error fetching files:", data);
             }

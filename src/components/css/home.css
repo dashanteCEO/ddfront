@@ -135,6 +135,23 @@
   background: #00aeff;
 }
 
+.fff {
+  display: flex;
+  margin-bottom: 5rem;
+  flex-direction: column;
+}
+.fff .importantInfo {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 15px auto;
+  padding: 10px;
+  transition: all 0.4s ease;
+}
+.fff .importantInfo:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 @media only screen and (max-width: 768px) {
   .hero {
     display: flex;

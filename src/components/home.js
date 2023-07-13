@@ -1,6 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import './css/home.css'
 import { Link } from 'react-router-dom';
+import Text from './homeText';
 
 export default function Home(){
    const [vehicles, setVehicles] = useState([])
@@ -51,14 +52,10 @@ return(
        <div className='featured'>
          <h2>featured items</h2>
          <h1 style={{
-            // width: '100%',
             borderRadius: '10px',
             background: '#fff',
             margin: 'auto',
             marginTop:95,
-            // position: 'absolute',
-            // padding: '15px',
-            // top: 0,
             display: isLoading ? 'flex' : 'none',
           }}>Loading...</h1>
          <div className='featuredVehicles'>
@@ -90,5 +87,13 @@ return(
          </div>
        <a href='/vehicles' className='a'>View More</a>
        </div>
+       <div className='fff'>
+         {Text.map(item =>{
+            return(
+               <div className='importantInfo'>{item.text}</div>
+            )
+         })}
+       </div>
+
     </div>
 )}
