@@ -17,8 +17,8 @@ export default function Footer(){
                 social media
             </h2>
             <ul>
-                <a href="/"><img src={ig} alt="Instagram"/></a>
-                <a href="/"><img src={fb} alt="Facebook"/></a>
+                <a href="https://www.instagram.com/ddautoja/"><img src={ig} alt="Instagram"/></a>
+                <a href=""><img src={fb} alt="Facebook"/></a>
             </ul>
           </div>
           <div className='contact'>

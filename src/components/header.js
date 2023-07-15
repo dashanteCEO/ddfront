@@ -57,7 +57,7 @@ export default function Header() {
         />
         <ul>
           <a href="/vehicles">vehicles</a>
-          <a href="/">location</a>
+          <a href="/location">location</a>
           {/* <a href="/">sale options</a> */}
         </ul>
         <div className="burger" onClick={handleBurgerClick}>
