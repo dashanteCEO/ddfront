@@ -48,25 +48,25 @@ export default function SearchBrand(){
       {
         vehicles.map((item, index)=>{
           return(
-            <div className="card" key={index}>
-            <img src={item.url} alt={item.url} />
-              <flex>
-                <h3>{item.brand}</h3>
-                <h3 className="model">{item.model}</h3>
-              </flex>
-              <p>{item.trim}</p>
-              <flex>
-                <p>${item.price}</p>
-                <t />
-                <p>{item.year}</p>
-              </flex>
-              <flex>
-                <p>{item.transmission}</p>
-                <t />
-                <p className="model">{item.bodyType}</p>
-              </flex>
-              <Link to={`/vehicle/${item.groupId}`}>view</Link>
-            </div>
+            <div className='card' href='/' key={featured.url}>
+            <img src={featured.url} alt={featured.url} />
+            <flex>
+              <h3>{featured.brand}</h3>
+              <h3 className='model'>{featured.model}</h3>
+            </flex>
+            <p>{featured.trim}</p>
+            <flex>
+              <p>${featured.price}</p>
+              <t />
+              <p>{featured.year}</p>
+            </flex>
+            <flex>
+              <p>{featured.transmission}</p>
+              <t />
+              <p className='model'>{featured.bodyType}</p>
+            </flex>
+            <Link to={`/vehicle/${featured.groupId}`}>view</Link>
+          </div>
           )
         })
       }
