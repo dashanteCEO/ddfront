@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './css/home.css';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCar } from '@fortawesome/free-solid-svg-icons';
 import Text from './homeText';
 
 export default function Home() {
