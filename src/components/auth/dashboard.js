@@ -73,7 +73,6 @@ function Dashboard() {
         vehicles.map(item=>{
           return(
             <div 
-            // to={`/vehicle/${item.groupId}`}
              key={item.groupId} className='card'>
             <img src={item.url} alt={item.url} />
             <p>{item.brand}</p>

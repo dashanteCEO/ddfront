@@ -135,7 +135,12 @@ export default function VehicleView(){
               </view>
               <drill>
                   <h3>Specifications:</h3>
-                  <h3 className='value'>{specs}</h3>
+                  <h3 className='value'
+                  >
+                    <li>
+                    {specs}
+                    </li>
+                  </h3>
                  </drill>
               </form>
             </div>

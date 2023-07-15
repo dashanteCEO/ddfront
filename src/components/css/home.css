@@ -94,6 +94,11 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   flex-direction: column;
+  transition: all 0.4s ease;
+}
+.featured .featuredVehicles .card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: -5px;
 }
 .featured .featuredVehicles .card img {
   width: 100%;
@@ -133,6 +138,30 @@
 }
 .featured .featuredVehicles .card a:hover {
   background: #00aeff;
+}
+
+tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 2rem auto;
+}
+tabs tab {
+  transition: all 0.4s ease;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 10rem;
+  width: 30%;
+}
+tabs tab:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: -5px;
 }
 
 .fff {
