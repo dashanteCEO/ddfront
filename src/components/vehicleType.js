@@ -51,18 +51,25 @@ export default function VehicleType(){
       {
         vehicles.map(item=>{
           return(
-            <div className='card'>
+            <div className='card' href='/' key={item.url}>
             <img src={item.url} alt={item.url} />
-            <flex> 
-            <h3>{item.brand}</h3>
-            <h3 className='model'>{item.model}</h3>
+            <flex>
+              <h3>{item.brand}</h3>
+              <h3 className='model'>{item.model}</h3>
             </flex>
-            <p>${item.price}</p>
-            <p>{item.transmission}</p>
-            <p>{item.bodyType}</p>
+            <p>{item.trim}</p>
+            <flex>
+              <p>${item.price}</p>
+              <t />
+              <p>{item.year}</p>
+            </flex>
+            <flex>
+              <p>{item.transmission}</p>
+              <t />
+              <p className='model'>{item.bodyType}</p>
+            </flex>
             <Link to={`/vehicle/${item.groupId}`}>view</Link>
           </div>
-
           )
         })
       }
