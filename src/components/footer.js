@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/footer.css'
 import ig from './instagram.png'
-import fb from './facebook.png'
+// import fb from './facebook.png'
 
 export default function Footer(){
   const token = sessionStorage.getItem("token");
