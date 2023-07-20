@@ -45,11 +45,11 @@ export default function Header() {
     return (
       <div className="header">
         <a href="/" className="logo">
-          <img
+          {/* <img
             src="https://cdn2.jacars.net/media/cache/2a/c4/2ac4835452665b29787730c7d44d3ff0.jpg"
             alt="logo"
-          />
-          <h2>D&D Auto Sales</h2>
+          /> */}
+          <h2>BM Auto Sales</h2>
         </a>
         <input
           placeholder="Search for a vehicle by brand"

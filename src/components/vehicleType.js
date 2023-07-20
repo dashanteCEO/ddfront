@@ -38,14 +38,23 @@ export default function VehicleType(){
       <div className='head'>
         <a href='/'>home</a>
       </div>
-         <h1 style={{
+        <h1 style={{
+  borderRadius: '10px',
+  background: '#fff',
+  margin: 'auto',
+  marginTop: 95,
+  display: isLoading || vehicles.length >= 1 ? 'none' : 'flex',
+  textAlign: 'center'
+}}>Loading...</h1>
+
+          <h1 style={{
             borderRadius: '10px',
             background: '#fff',
             margin: 'auto',
             marginTop:95,
-            display: isLoading ? 'flex' : 'none',
-            textAlign:'center'
-          }}>Loading...</h1>
+            display: vehicles.length === 0 ? 'flex' : 'none',
+            textAlign:'center',
+          }}>No "{bodyType}s" avalible</h1>
             <div>
         <div className='cards'>
       {

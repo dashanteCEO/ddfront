@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './css/home.css';
 import { Link } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCar } from '@fortawesome/free-solid-svg-icons';
 import Text from './homeText';
 
 export default function Home() {
@@ -32,9 +30,9 @@ export default function Home() {
     <div className='home'>
       <div className='hero'>
         <h2>
-          500+
+          Certified Used
           <br />
-          Vehicles
+          Car Dealer
         </h2>
         <div className='icons'>
           <a href='/vehiclestype/sedan'>sedans</a>

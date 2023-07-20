@@ -46,8 +46,6 @@
   align-items: center;
 }
 .header .logo h2 {
-  margin-top: -10px;
-  margin-left: -20px;
   font-weight: 500;
 }
 .header .draw {

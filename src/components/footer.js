@@ -17,22 +17,22 @@ export default function Footer(){
                 social media
             </h2>
             <ul>
-                <a href="https://www.instagram.com/ddautoja/"><img src={ig} alt="Instagram"/></a>
-                <a href="https://www.facebook.com/DDAUTOJA/"><img src={fb} alt="Facebook"/></a>
+                <a href="https://www.instagram.com/mani_bmautosalesltd/"><img src={ig} alt="Instagram"/></a>
+                {/* <a href="https://www.facebook.com/DDAUTOJA/"><img src={fb} alt="Facebook"/></a> */}
             </ul>
           </div>
           <div className='contact'>
             <h2>
               contact
             </h2>
-            <a href="tel:+18768271913">
-  <h3>(876)827-1913</h3>
+            <a href="tel:+18764095409">
+  <h3>(876)409-5409</h3>
 </a>
-<a href="tel:+18764424836">
-  <h3>(876)442-4836</h3>
+<a href="tel:+1876417-0058">
+  <h3>(876)417-0058</h3>
 </a>
-<a href="mailto:ddautoja@gmail.com">
-  <h3>ddautoja@gmail.com</h3>
+<a href="mailto:">
+  <h3>email here</h3>
 </a>
           </div>
         </div>
