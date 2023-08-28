@@ -43,9 +43,9 @@ export default function Home() {
           <a href='/vehiclestype/mini-van'>mini-vans</a>
         </div>
         <h2 className='h2'>
-          new stock
-          <br />
-          every week!
+          quality
+           <br />
+           guaranteed
         </h2>
       </div>
       {/* <tabs>
