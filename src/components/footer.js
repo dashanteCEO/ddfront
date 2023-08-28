@@ -25,11 +25,11 @@ export default function Footer(){
             <h2>
               contact
             </h2>
-            <a href="tel:+18764095409">
+            {/* <a href="tel:+18764095409">
   <h3>(876)409-5409</h3>
-</a>
-<a href="tel:+1876417-0058">
-  <h3>(876)417-0058</h3>
+</a> */}
+<a href="#">
+  <h3>phone here</h3>
 </a>
 <a href="mailto:">
   <h3>email here</h3>
