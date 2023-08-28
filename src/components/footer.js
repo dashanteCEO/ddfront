@@ -17,7 +17,7 @@ export default function Footer(){
                 social media
             </h2>
             <ul>
-                <a href="https://www.instagram.com/mani_bmautosalesltd/"><img src={ig} alt="Instagram"/></a>
+                <a href="https://www.instagram.com/motor_wizz_ltd/"><img src={ig} alt="Instagram"/></a>
                 {/* <a href="https://www.facebook.com/DDAUTOJA/"><img src={fb} alt="Facebook"/></a> */}
             </ul>
           </div>
